@@ -37,6 +37,9 @@ class BinarySearch
 		 	}
 		 	middle = (first+last)/2;
 		}
+		//first will be greater than last when either:
+		//first is incremented & is greater than n-1(last index) or
+		//last is decremented & is less than 0(first index)
 		if(first>last)
 		{
 			System.out.println("Number not found!");
