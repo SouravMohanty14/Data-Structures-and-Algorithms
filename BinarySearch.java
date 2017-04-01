@@ -19,7 +19,7 @@ class BinarySearch
 		first = 0;
 		last = n-1;
 		middle=(first+last)/2;
-		while(first<=last)
+		while(first<=last) //base case
 		{
 		 	if(arr[middle]==num)
 		 	{
@@ -35,11 +35,11 @@ class BinarySearch
 		 		//if(arr[middle]>num
 		 		last = middle-1;
 		 	}
-		 	middle = (first+last)/2;
+		 	middle = (first+last)/2; //keep updating middle element
 		}
 		//first will be greater than last when: (Corner case)
-		//(1)first is greater than n-1(last index) or
-		//(2)last is smaller than 0(first index)
+		//(1)first is greater than arr[n-1](last index) or
+		//(2)last is smaller than arr[0](first index)
 		if(first>last)
 		{
 			System.out.println("Number not found!");
