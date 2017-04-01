@@ -32,7 +32,7 @@ class BinarySearch
 		 	}
 		 	else
 		 	{
-		 		//if(arr[middle]>num
+		 		//if(arr[middle]>num)
 		 		last = middle-1;
 		 	}
 		 	middle = (first+last)/2; //keep updating middle element
